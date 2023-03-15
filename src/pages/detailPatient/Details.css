@@ -1,0 +1,87 @@
+.product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: auto;
+  width: 100%;
+}
+
+.productRight {
+  height: auto;
+  width: 60%;
+}
+.productLeft {
+  height: auto;
+  width: 60%;
+  padding-top: 20px;
+}
+.productRightCard {
+  position: relative;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.buttonCard{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.buttonCard a{
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5%;
+  margin: 2.5%;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid ;
+  border-radius: 8px;
+}
+.buttonCard a:hover{
+background-color: #00AB55;
+color: #fff;
+}
+.inputDisabled{
+  border:none;
+  padding: 2%;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #637381;
+}
+.selectDisabled {
+  background-color: transparent;
+  border: none;
+  padding: 2%;
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #637381;
+}
+.inputDisabled:focus{
+  outline: none;
+}
+
+@media screen and (max-width: 900px) {
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+    width: 100%;
+  }
+  .productRight {
+    height: auto;
+    width: 90%;
+  }
+  .productLeft {
+    height: auto;
+    width: 90%;
+    padding-top: 20px;
+  }
+}
